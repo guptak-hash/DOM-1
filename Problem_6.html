@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <img src="" id="animal-img" alt="animal images">
+   <select onchange="animal()">
+     <option value="dog">Dog</option>
+     <option value="cat">Cat</option>
+     <option value="elephant">Elephant</option>
+     <option value="lion">Lion</option>
+   </select>
+</body>
+</html>
+
+
+
+<script>
+  document.querySelector("img").src = "https://media.istockphoto.com/id/1338954116/photo/dog-portrait-outside-at-the-park-on-summer.jpg?s=612x612&w=0&k=20&c=6sRSNWMhZj4QxeTuLS2JZLzjR_os-Gbfnil6mNjga6I="
+    function animal(){
+        let res = document.querySelector("select").value
+        if(res==="cat"){
+            document.querySelector("img").src = "https://t4.ftcdn.net/jpg/02/66/72/41/360_F_266724172_Iy8gdKgMa7XmrhYYxLCxyhx6J7070Pr8.jpg"
+        }
+        else if(res==="elephant"){
+            document.querySelector("img").src = "https://files.worldwildlife.org/wwfcmsprod/images/African_Elephant_Kenya_112367/hero_small/3v49raxlb8_WW187785.jpg"
+        }
+        else if(res==="lion"){
+            document.querySelector("img").src = "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Lion_waiting_in_Namibia.jpg/800px-Lion_waiting_in_Namibia.jpg"
+        }
+        else if(res==="dog"){
+            document.querySelector("img").src = "https://media.istockphoto.com/id/1338954116/photo/dog-portrait-outside-at-the-park-on-summer.jpg?s=612x612&w=0&k=20&c=6sRSNWMhZj4QxeTuLS2JZLzjR_os-Gbfnil6mNjga6I="
+        }
+
+        console.log(res)
+    }
+</script>
